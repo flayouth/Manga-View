@@ -1,10 +1,6 @@
 const router = require('express').Router();
-const Dish = require('../manga');
+const manga = require('../models/manga');
 const Handlebars = require("handlebars")
-const sequelize = new Sequelize('database', 'username', 'password', {
-  host: 'localhost',
-  dialect: 'mysql'
-});
 
 
 // This is the GET route 
@@ -17,6 +13,5 @@ router.get('/', async (req, res) => {
     res.json(data);
   });
   
-  app.use('/api', router);
   
   module.exports = router;

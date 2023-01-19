@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 import { engine } from 'express-handlebars';
 
 const app = express();
