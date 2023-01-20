@@ -1,8 +1,7 @@
 const router = require('express').Router();
 
-const homeRoutes = require('./manga-routes');
+const mangaRoutes = require('./manga-routes');
 
 router.use('/', mangaRoutes);
-router.use('/api', apiRoutes);
 
 module.exports = router;
