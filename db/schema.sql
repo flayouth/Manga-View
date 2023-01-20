@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS Manga_db;
+
+CREATE DATABASE Manga_db;
