@@ -5,11 +5,8 @@ const Sequelize = require('../config/connection');
 class Manga extends Model {}
 
 
-Manga.init({
-    //
-},
-    
-{
+Manga.init(
+ {
     sequelize: Sequelize,
     freezeTableName: true,
     underscored: true,

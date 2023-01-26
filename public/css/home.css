@@ -1,3 +1,9 @@
+body{
+	background-image: url(../images/tokyo-japan-hd-wallpaper.jpg);
+}
+
+
+
 .todohome {
 	margin: 130px 0 40px 0;
 	position: relative;
@@ -10,10 +16,11 @@
 	font-size: 80px;
 	font-weight: 200;
 	text-align: center;
-	color: blue;
+	color: rgb(3, 3, 28);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
+	
 }
 
 .todohome section {
@@ -33,7 +40,7 @@
 	font-weight: 500;
 	color: white;
 	border-radius: 5px;
-	background: blue;
+	background: rgba(0, 0, 255, 0.246);
 }
 
 .todohome a.button {
