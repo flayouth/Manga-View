@@ -2,23 +2,26 @@ const { Model, DataTypes } = require('sequelize');
 
 const Sequelize = require('../config/connection');
 
-class Manga extends Model {}
+class Favorite extends Model {}
 
 
-Manga.init({
+Favorite.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
+  user: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   title: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
-  description: {
-    type: DataTypes.STRING,
+  star: {
+    type: DataTypes.BOOLEAN,
     allowNull: false,
   },
 },
@@ -27,8 +30,8 @@ Manga.init({
     sequelize: Sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Manga',
+    modelName: 'Favorite',
   })
 
 
-module.exports = Manga;
+module.exports = Favorite;
