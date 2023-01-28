@@ -1,8 +1,12 @@
 * {
     font-family: monospace;
-    
+
     }
     
+    .container {
+        height: 100%;
+        width: 100%;
+    }
     
     .nav-bar{
         background-color: black;
@@ -78,6 +82,7 @@
         height: fit-content;
     }
     
+
     
     
     
