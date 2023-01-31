@@ -2,21 +2,17 @@ const { Model, DataTypes } = require('sequelize');
 
 const Sequelize = require('../config/connection');
 
-class Manga extends Model {}
+class Artists extends Model {}
 
 
-Manga.init({
+Artists.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
-  title: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  description: {
+  artist: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -26,8 +22,8 @@ Manga.init({
     sequelize: Sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'manga',
+    modelName: 'Artists',
   })
 
 
-module.exports = Manga;
+module.exports = Artists;

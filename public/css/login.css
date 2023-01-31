@@ -1,3 +1,9 @@
+body{
+	background-image: url(../images/tokyo-japan-hd-wallpaper.jpg);
+}
+
+
+
 .prompt {
 	max-width: 400px;
 	margin: 50px auto;
@@ -12,7 +18,7 @@ button {
 	padding: 10px;
 	width: 100%;
 	border-radius: 3px;
-	background: blue;
+	background: rgb(255, 255, 255);
 	font-size: 14px;
 	font-weight: 700;
 	color: white;
@@ -57,7 +63,7 @@ h3 {
 	font-size: 24px;
 	font-weight: 300;
 	text-align: center;
-	color: blue;
+	color: rgb(0, 0, 0);
 }
 
 form section {
